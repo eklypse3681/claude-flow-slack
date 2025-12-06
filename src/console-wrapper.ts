@@ -114,7 +114,7 @@ export function createClaudeFlowWrapper(
     env?: NodeJS.ProcessEnv;
   } = {}
 ): ConsoleWrapper {
-  const args = ['hive-mind', 'spawn', '--objective', objective];
+  const args = ['hive-mind', 'spawn', '--claude', '--objective', objective];
 
   if (options.additionalArgs) {
     args.push(...options.additionalArgs);
