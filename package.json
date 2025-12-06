@@ -1,0 +1,46 @@
+{
+  "name": "claude-flow-slack",
+  "version": "0.1.0",
+  "description": "Slack integration for claude-flow hive-mind - interact with Claude Code sessions via Slack threads",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "claude-flow-slack": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint src --ext .ts",
+    "start": "node dist/cli.js"
+  },
+  "keywords": [
+    "claude",
+    "claude-code",
+    "claude-flow",
+    "slack",
+    "hive-mind",
+    "ai"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@slack/bolt": "^3.17.0",
+    "@slack/web-api": "^7.0.0",
+    "strip-ansi": "^7.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@typescript-eslint/eslint-plugin": "^6.13.0",
+    "@typescript-eslint/parser": "^6.13.0",
+    "eslint": "^8.55.0",
+    "typescript": "^5.3.0",
+    "vitest": "^1.0.0",
+    "@vitest/coverage-v8": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
